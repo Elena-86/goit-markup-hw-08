@@ -1,0 +1,125 @@
+.our-team {
+  max-width: 100%;
+  background-color: $background-sоft-accent;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clause {
+  display: block;
+  width: 450px;
+  margin: 15px;
+  @media screen and(min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.team-icon {
+  fill: $logo-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  box-sizing: border-box;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  background-color: $background;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .team-icon,
+  &:focus .team-icon {
+    fill: $title-accent;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials .item {
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.our-team-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.team .information {
+  text-align: center;
+  background: $background;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.information .title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+.information .content {
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}

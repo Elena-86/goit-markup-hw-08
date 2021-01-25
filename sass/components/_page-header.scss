@@ -1,0 +1,359 @@
+.mobile-header {
+  width: 100%;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and(min-width: 768px) {
+    width: min-content;
+    border: none;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and(min-width: 1200px) {
+    padding: 0;
+  }
+}
+
+.tablet-desktop-position {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo__header-part {
+  color: $title-text-color;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  font-family: $logo-font;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+  @media screen and(min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  outline: none;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover .icon-menu,
+  &:hover .icon-cross {
+    fill: $accent-color;
+  }
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header-navigation {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+.top-contacts {
+  justify-content: center;
+  @media screen and(min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.site-nav {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
+.site-nav__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-left: 50px;
+  }
+}
+
+.site-nav__item:first-child {
+  @media screen and (min-width: 768px) {
+    margin-left: 0px;
+  }
+}
+
+.auth-nav__top:last-child {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.auth-nav__top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+  }
+}
+
+.site-nav__current-link {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  color: $accent-color;
+  text-decoration: none;
+  @media screen and(min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.site-nav__portfolio {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+  color: $title-text-color;
+  @media screen and(min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-nav__contacts {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  color: $title-text-color;
+  text-decoration: none;
+  transition-property: opacity, color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav {
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 84px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and(min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 305px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.auth-nav .top-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-nav__mail {
+  position: relative;
+  color: $primary-text-color;
+
+  transition-property: opacity, color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 8px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav__phone {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: $primary-text-color;
+  transition-property: opacity, color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  @media screen and (min-content: 768px) {
+    display: flex;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.header-navigation .link {
+  text-decoration: none;
+  color: $title-text-color;
+}

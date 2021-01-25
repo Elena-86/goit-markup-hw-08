@@ -1,0 +1,289 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden,
+.modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  width: 450px;
+  height: 609px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: inline-block;
+  background-color: $background;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+  @media screen and(min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+  border-color: $primary-text-color;
+  background-color: $background;
+
+  &:focus {
+    border-color: $primary-text-color;
+  }
+
+  &:focus .close-icon {
+    fill: $accent-color;
+  }
+}
+
+.close-icon {
+  fill: $title-text-color;
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+}
+
+.modal-information {
+  justify-content: center;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  @media screen and(min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.modal-form {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+
+.modalInput {
+  display: block;
+  width: 370px;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: border-color, box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+  @media screen and(min-width: 1200px) {
+    width: 448px;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus + .formIcon {
+    fill: $accent-color;
+  }
+}
+
+.modalTextarea {
+  width: 370px;
+  height: 120px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: border-color, box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+  @media screen and(min-width: 1200px) {
+    width: 448px;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.modalField {
+  position: relative;
+}
+
+.formIcon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+  fill: $title-text-color;
+}
+
+.inputGroup {
+  margin-bottom: 10px;
+}
+
+textarea[placeholder="Введите текст"] {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  @media screen and(min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
+
+.checkGroup {
+  position: relative;
+  align-self: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.markIcon {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  fill: $title-accent;
+  @media screen and(min-width: 1200px) {
+    top: 9px;
+  }
+}
+
+.policyLink {
+  position: relative;
+  padding-bottom: 1px;
+  color: $accent-color;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    height: 1px;
+    border-radius: 1px;
+    background-color: $accent-color;
+  }
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    content: "";
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px $title-text-color;
+  }
+
+  .checkInput:checked + &::before {
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px $accent-color;
+    background-color: $accent-color;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkText {
+  align-self: center;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.modalButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.9;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: $title-accent;
+  background-color: $accent-color;
+  cursor: pointer;
+}

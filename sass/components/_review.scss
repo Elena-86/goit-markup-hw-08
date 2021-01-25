@@ -1,0 +1,65 @@
+.review-icon {
+  display: block;
+}
+
+.review {
+  background-color: $background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.review-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: transparent;
+  border-radius: 4px;
+  background: $background-sоft-accent;
+  height: 120px;
+}
+
+.description .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  @media screen and(min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.description .content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.description__item {
+  margin: 15px;
+  width: 450px;
+  @media screen and(min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 270px;
+  }
+}

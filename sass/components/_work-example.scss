@@ -1,0 +1,151 @@
+.site-nav__studio-link {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  color: $title-text-color;
+  text-decoration: none;
+  transition-property: opacity, color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.project-demonstration {
+  background-color: $background;
+}
+
+.work-example {
+  max-width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.example {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.example .item {
+  width: 450px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.example .text {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  background: $background;
+}
+
+.text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.text .title {
+  margin-bottom: 4px;
+}
+
+.example .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-text-color;
+}
+
+.example .content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.example .link {
+  display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  &:hover .text-overlay {
+    transform: translateY(0);
+  }
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.example-box {
+  position: relative;
+}
+
+.thumb {
+  position: relative;
+
+  overflow: hidden;
+  background-color: $background;
+}
+
+.thumb > .text-overlay {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: $title-accent;
+  background-color: $overlay-color;
+  transform: translateY(100%);
+  transition: transform 250ms;
+  transition-timing-function: $timing-funktion;
+}
