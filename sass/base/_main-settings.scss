@@ -5,7 +5,8 @@ a {
 body {
   color: $primary-text-color;
 
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: $document-font, $logo-font;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
@@ -65,27 +66,64 @@ p {
 
 .menu-container {
   text-align: center;
-
   letter-spacing: 0.02em;
-  background-color: $background;
-  border: 1px solid #ececec;
+  background-color: #ffffff;
+  border-top: 1px solid #ececec;
+}
 
-  &.is-open {
-    display: block;
-    z-index: 1;
-  }
-  @media screen and(max-width: 767px) {
+.menu-container.is-open {
+  display: block;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
     position: absolute;
     display: none;
     top: 60px;
     left: 0;
     width: 100%;
   }
-  @media screen and(min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
     display: flex;
     align-items: center;
     position: relative;
     border: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-bottom {
+    width: 1200px;
+    justify-content: normal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-bottom {
+    width: 1200px;
+    justify-content: normal;
   }
 }
 

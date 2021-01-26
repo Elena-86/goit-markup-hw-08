@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,17 +76,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/Технокряк_mobile_filter.jpg 1x, 
-                                ./images/Технокряк_mobile_filter2x.jpg 2x,
-                                ./images/Технокряк_tablet_filter.jpg 1x,
-                                ./images/Технокряк_tablet_filter2x.jpg 2x,
-                                ./images/Технокряк_desktop_filter.jpg 1x,
-                                ./images/Технокряк_desktop_filter2x.jpg 2x"
-                                src="./images/Технокряк_mobile_filter.jpg" 
-                                alt="Ноутбук с изображением членов команды"
-                                    width="450px" height="294px">
-
+                                <picture>
+                                    <source srcset="./images/Технокряк_mobile_filter.jpg 1x, 
+                                                    ./images/Технокряк_mobile_filter2x.jpg 2x" 
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset="./images/Технокряк_tablet_filter.jpg 1x,
+                                                    ./images/Технокряк_tablet_filter2x.jpg 2x" 
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/Технокряк_desktop_filter.jpg 1x,
+                                                    ./images/Технокряк_desktop_filter2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/Технокряк_mobile_filter.jpg" alt="Ноутбук с изображением членов команды">
+                                </picture>                                
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -102,16 +102,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/New_Orlean_mobile_filter.jpg 1x,
-                                ./images/New_Orlean_mobile_filter2x.jpg 2x,
-                                ./images/New_Orlean_tablet_filter.jpg 1x,
-                                ./images/New_Orlean_tablet_filter2x.jpg 2x,
-                                ./images/New_Orlean_desktop_filter.jpg 1x,
-                                ./images/New_Orlean_desktop_filter2x.jpg 2x"
-                                src="./images/New_Orlean_mobile_filter.jpg" 
-                                alt="Баскетболисты в процессе игры"
-                                    width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/New_Orlean_mobile_filter.jpg 1x,
+                                                    /images/New_Orlean_mobile_filter2x.jpg 2x"
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset=" ./images/New_Orlean_tablet_filter.jpg 1x,
+                                                    ./images/New_Orlean_tablet_filter2x.jpg 2x"
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/New_Orlean_desktop_filter.jpg 1x,
+                                                    ./images/New_Orlean_desktop_filter2x.jpg 2x"
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/New_Orlean_mobile_filter.jpg" alt="Баскетболисты в процессе игры">
+                                </picture>                               
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -127,16 +129,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/Seafood_mobile_filter.jpg 1x,
-                                ./images/Seafood_mobile_filter2x.jpg 2x,
-                                ./images/Seafood_tablet_filter.jpg 1x,
-                                ./images/Seafood_tablet_filter2x.jpg 2x,
-                                ./images/Seafood_desktop_filter.jpg 1x,
-                                ./images/Seafood_desktop_filter2x.jpg 2x"
-                                src="./images/Seafood_mobile_filter.jpg" 
-                                alt="Логотип ресторана в виде большой рыбы"
-                                    width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/Seafood_mobile_filter.jpg 1x,
+                                                    ./images/Seafood_mobile_filter2x.jpg 2x"
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset="./images/Seafood_tablet_filter.jpg 1x,
+                                                    ./images/Seafood_tablet_filter2x.jpg 2x"
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/Seafood_desktop_filter.jpg 1x,
+                                                    ./images/Seafood_desktop_filter2x.jpg 2x"
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/Seafood_mobile_filter.jpg" alt="Логотип ресторана в виде большой рыбы">
+                                </picture>                                
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -151,16 +155,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/Prime_mobile_filter.jpg 1x,
-                                ./images/Prime_mobile_filter2x.jpg 2x,
-                                ./images/Prime_tablet_filter.jpg 1x,
-                                ./images/Prime_tablet_filter2x.jpg 2x,
-                                ./images/Prime_desktop_filter.jpg 1x,
-                                ./images/Prime_desktop_filter2x.jpg 2x" 
-                                src="./images/Prime_mobile_filter.jpg" 
-                                alt="Черные наушники" 
-                                width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/Prime_mobile_filter.jpg 1x,
+                                                    ./images/Prime_mobile_filter2x.jpg 2x"
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset="./images/Prime_tablet_filter.jpg 1x,
+                                                    ./images/Prime_tablet_filter2x.jpg 2x"
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/Prime_desktop_filter.jpg 1x,
+                                                    ./images/Prime_desktop_filter2x.jpg 2x"
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/Prime_mobile_filter.jpg" alt="Черные наушники">
+                                </picture>                                                                
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -176,15 +182,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img srcset="./images/Boxes_mobile_filter.jpg 1x,
-                                ./images/Boxes_mobile_filter2x.jpg 2x,
-                                ./images/Boxes_tablet_filter.jpg 1x,
-                                ./images/Boxes_tablet_filter2x.jpg 2x,
-                                ./images/Boxes_desktop_filter.jpg 1x,
-                                ./images/Boxes_desktop_filter2x.jpg 2x"
-                                src="./images/Boxes_mobile_filter.jpg" 
-                                alt="Белая и кремовая коробочки" 
-                                width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/Boxes_mobile_filter.jpg 1x,
+                                                    ./images/Boxes_mobile_filter2x.jpg 2x"
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset="./images/Boxes_tablet_filter.jpg 1x,
+                                                    ./images/Boxes_tablet_filter2x.jpg 2x"
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/Boxes_desktop_filter.jpg 1x,
+                                                    ./images/Boxes_desktop_filter2x.jpg 2x"
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/Boxes_mobile_filter.jpg" alt="Белая и кремовая коробочки">
+                                </picture>                                
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -199,16 +208,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/Inspiration_mobile_filter.jpg 1x,
-                                ./images/Inspiration_mobile_filter2x.jpg 2x,
-                                ./images/Inspiration_tablet_filter.jpg 1x,
-                                ./images/Inspiration_tablet_filter2x.jpg 2x,
-                                ./images/Inspiration_desktop_filter.jpg 1x,
-                                ./images/Inspiration_desktop_filter2x.jpg 2x"
-                                src="./images/Inspiration_mobile_filter.jpg" 
-                                alt="Монитор компьютера" 
-                                width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/Inspiration_mobile_filter.jpg 1x,
+                                                    ./images/Inspiration_mobile_filter2x.jpg 2x"
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset="./images/Inspiration_tablet_filter.jpg 1x,
+                                                    ./images/Inspiration_tablet_filter2x.jpg 2x"
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/Inspiration_desktop_filter.jpg 1x,
+                                                    ./images/Inspiration_desktop_filter2x.jpg 2x"
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/Inspiration_mobile_filter.jpg" alt="Монитор компьютера">
+                                </picture>                              
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -223,16 +234,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/Издание_mobile_filter.jpg 1x,
-                                ./images/Издание_mobile_filter2x.jpg 2x,
-                                ./images/Издание_tablet_filter.jpg 1x,
-                                ./images/Издание_tablet_filter2x.jpg 2x,
-                                ./images/Издание_desktop_filter.jpg 1x,
-                                ./images/Издание_desktop_filter2x.jpg 2x"
-                                src="./images/Издание_mobile_filter.jpg" 
-                                alt="Разворот книги с картинками"
-                                width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/Издание_mobile_filter.jpg 1x,
+                                                    ./images/Издание_mobile_filter2x.jpg 2x"
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset="./images/Издание_tablet_filter.jpg 1x,
+                                                    ./images/Издание_tablet_filter2x.jpg 2x"
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/Издание_desktop_filter.jpg 1x,
+                                                    ./images/Издание_desktop_filter2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <img src="./images/Издание_mobile_filter.jpg" alt="Разворот книги с картинками">
+                                </picture>                                
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -247,16 +260,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/LAB_mobile_filter.jpg 1x,
-                                ./images/LAB_mobile_filter2x.jpg 2x,
-                                ./images/LAB_tablet_filter.jpg 1x,
-                                ./images/LAB_tablet_filter2x.jpg 2x,
-                                ./images/LAB_desktop_filter.jpg 1x,
-                                ./images/LAB_desktop_filter2x.jpg 2x"
-                                src="./images/LAB_mobile_filter.jpg" 
-                                alt="Лейба для одежды" 
-                                width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/LAB_mobile_filter.jpg 1x,
+                                                    ./images/LAB_mobile_filter2x.jpg 2x"
+                                                    media=" (max-width: 767px)" />
+                                    <source srcset="./images/LAB_tablet_filter.jpg 1x,
+                                                    ./images/LAB_tablet_filter2x.jpg 2x"
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/LAB_desktop_filter.jpg 1x,
+                                                    ./images/LAB_desktop_filter2x.jpg 2x"
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/LAB_mobile_filter.jpg" alt="Лейба для одежды">
+                                </picture>                                
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -271,16 +286,18 @@
                     <li class="item">
                         <a class="link" href="#">
                             <div class="thumb">
-                                <img 
-                                srcset="./images/Growing_Business_mobile_filter.jpg 1x,
-                                ./images/Growing_Business_mobile_filter2x.jpg 2x,
-                                ./images/Growing_Business_tablet_filter.jpg 1x,
-                                ./images/Growing_Business_tablet_filter2x.jpg 2x,
-                                ./images/Growing_Business_desktop_filter.jpg 1x,
-                                ./images/Growing_Business_desktop_filter2x.jpg 2x"
-                                src="./images/Growing_Business_mobile_filter.jpg"
-                                alt="НоутбукБ на экране которого открыто приложение" 
-                                width="450px" height="294px">
+                                <picture>
+                                    <source srcset="./images/Growing_Business_mobile_filter.jpg 1x,
+                                                    ./images/Growing_Business_mobile_filter2x.jpg 2x"
+                                                     media=" (max-width: 767px)" />
+                                    <source srcset="./images/Growing_Business_tablet_filter.jpg 1x,
+                                                    ./images/Growing_Business_tablet_filter2x.jpg 2x" 
+                                                    media="(min-width: 768px)" />
+                                    <source srcset="./images/Growing_Business_desktop_filter.jpg 1x,
+                                                    ./images/Growing_Business_desktop_filter2x.jpg 2x"
+                                                    media="(min-width: 1200px)" />
+                                    <img src="./images/Growing_Business_mobile_filter.jpg" alt="Ноутбук на экране которого открыто приложение">
+                                </picture>                                
                                 <p class="text-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту
                                     платформу для цифрового
@@ -366,7 +383,6 @@
             </form>
         </div>
     </footer>
-<script src="js/modal.js"></script>
 <script src="js/menu.js"></script>
 </body>
 </html>

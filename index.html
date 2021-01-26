@@ -57,8 +57,7 @@
    <main>       
              <!--секция-герой-->
              
-         <section class="hero">
-             
+         <section class="hero">             
             <div class="hero-overlay container">
         <h1 class="title">Эффективные решения для вашего бизнеса</h1>
         <button class="button" type="submit" data-modal-open>Заказать услугу</button>
@@ -109,40 +108,36 @@
         </div> 
     </section> 
 
-           <section class="occupation">                                   
-           <h2 class="exposition-title">Чем мы занимаемся</h2>  
-        <div class="container">
+           <section class="occupation">
+            <div class="container">
+           <h2 class="exposition-title">Чем мы занимаемся</h2>         
            <ul class="images-list">
                <li class="item">
                    <div class="exposition-box">
-                   <img 
-                   srcset="./images/Десктопные_приложения.jpg 1x,
-                   ./images/Десктопные_приложения2x.jpg 2x"
-                    src="./images/Десктопные_приложения.jpg"
-                    alt="Планшет с html разметкой" 
-                    width="370" height="294">
+                    <picture>
+                        <source srcset="./images/Десктопные_приложения.jpg 1x,./images/Десктопные_приложения2x.jpg 2x" media="(min-width: 1200px)" />
+                        <img src="./images/Десктопные_приложения.jpg" alt="Планшет с html разметкой" />
+                    </picture>                   
                    <p class="occupation-positioning">Десктопные приложения</p>
                </div>
                 </li>
                <li class="item">
                 <div class="exposition-box">
-                <img 
-                srcset="./images/Мобильные_приложения.jpg 1x,
-                ./images/Мобильные_приложения2x.jpg 2x" 
-                src="./images/Мобильные_приложения.jpg" 
-                alt="Ноутбук с изображением схем макетов на мобильных устройствах"
-                width="370" height="294">
+                    <picture>
+                        <source srcset="./images/Мобильные_приложения.jpg 1x,./images/Мобильные_приложения2x.jpg 2x"/>
+                        <img src="./images/Мобильные_приложения.jpg"
+                        alt="Ноутбук с изображением схем макетов на мобильных устройствах">
+                    </picture>               
                     <p class="occupation-positioning">Мобильные приложения</p>
             </div>            
             </li>
                <li class="item">
                 <div class="exposition-box">
-                   <img 
-                   srcset="./images/Дизайнерские_решения.jpg 1x,
-                   ./images/Дизайнерские_решения2x.jpg 2x"
-                   src="./images/Дизайнерские_решения.jpg" 
-                   alt="Планшет с изображением палитры цветов" 
-                   width="370" height="294">
+                    <picture>
+                        <source srcset="./images/Дизайнерские_решения.jpg 1x,/images/Дизайнерские_решения2x.jpg 2x"/>
+                        <img src="./images/Дизайнерские_решения.jpg"
+                        alt="Планшет с изображением палитры цветов" >
+                    </picture>                  
                     <p class="occupation-positioning">Дизайнерские решения</p>
                 </div>   
                 </li> 
@@ -156,16 +151,20 @@
            <div class="container">
            <ul class="team">
                <li class="clause">
-                   <img 
-                   srcset="./images/Демьяненко_mobile_team.jpg 1x,
-                   ./images/Демьяненко_mobile_team2x.jpg 2x,
-                   ./images/Демьяненко_tablet_team.jpg 1x,
-                   ./images/Демьяненко_tablet_team2x.jpg 2x,
-                   ./images/Демьяненко_desktop_team.jpg 1x,
+                <picture>
+                    <source srcset="./images/Демьяненко_mobile_team.jpg 1x,
+                                    ./images/Демьяненко_mobile_team2x.jpg 2x"
+                                     media="(max-width: 767px)"/>
+                    <source srcset="./images/Демьяненко_tablet_team.jpg 1x,
+                   ./images/Демьяненко_tablet_team2x.jpg 2x"
+                                  media="(min-width: 768px)"/>
+                    <source srcset="./images/Демьяненко_desktop_team.jpg 1x,
                    ./images/Демьяненко_desktop_team2x.jpg 2x"
+                        media="(min-width: 1200px)"/>
+                    <img 
                    src="images/Демьяненко_mobile_team.jpg" 
-                   alt="Игорь Демьяненко" 
-                   width="450px" height="460px">
+                    alt="Игорь Демьяненко">
+                </picture>                   
                    <div class="information">
                        <h3 class="title">Игорь Демьяненко</h3>
                        <p class="content">Product Designer</p>
@@ -207,17 +206,19 @@
                    
                </li>
                <li class="clause">
-                   <img 
-                   srcset="./images/Репина_mobile_team.jpg 1x,
-                   ./images/Репина_mobile_team2x.jpg 2x,
-                   ./images/Репина_tablet_team.jpg 1x,
-                   ./images/Репина_tablet_team2x.jpg 2x,
-                   ./images/Репина_desktop_team.jpg 1x,
-                   ./images/Репина_desktop_team2x.jpg 2x"
-                   src="images/Репина_mobile_team.jpg" 
-                   alt="Ольга Репина" 
-                   width="450px" height="460px">
-                   <div class="information">
+                <picture>
+                    <source srcset="./images/Репина_mobile_team.jpg 1x,
+                                    ./images/Репина_mobile_team2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+                    <source srcset="./images/Репина_tablet_team.jpg 1x,
+                                    ./images/Репина_tablet_team2x.jpg 2x" 
+                                   media="(min-width: 768px)"/>
+                    <source srcset="./images/Репина_desktop_team.jpg 1x,
+                                   ./images/Репина_desktop_team2x.jpg 2x"
+                                   media="(min-width: 1200px)"/>
+                    <img src="images/Репина_mobile_team.jpg" alt="Ольга Репина">
+                </picture>
+              <div class="information">
                     <h3 class="title">Ольга Репина</h3>
                     <p class="content">Frontend Developer</p>
                     <ul class="socials">
@@ -257,17 +258,19 @@
                 </div>
                </li>
                <li class="clause">
-                   <img 
-                   srcset="./images/Тарасов_mobile_team.jpg 1x,
-                   ./images/Тарасов_mobile_team2x.jpg 2x,
-                   ./images/Тарасов_tablet_team.jpg 1x,
-                   ./images/Тарасов_tablet_team2x.jpg 2x,
-                   ./images/Тарасов_desktop_team.jpg 1x,
-                   ./images/Тарасов_desktop_team2x.jpg 2x"
-                   src="images/Тарасов_mobile_team.jpg" 
-                   alt="Николай Тарасов" 
-                   width="450px" height="460px">
-                   <div class="information">
+                <picture>
+                    <source srcset="./images/Тарасов_mobile_team.jpg 1x,
+                                    ./images/Тарасов_mobile_team2x.jpg 2x"
+                                    media=" (max-width: 767px)"/>
+                    <source srcset="./images/Тарасов_tablet_team.jpg 1x,
+                                    ./images/Тарасов_tablet_team2x.jpg 2x" 
+                                    media="(min-width: 768px)"/>
+                    <source srcset="./images/Тарасов_desktop_team.jpg 1x,
+                                   ./images/Тарасов_desktop_team2x.jpg 2x" 
+                                    media="(min-width: 1200px)"/>
+                    <img src="images/Тарасов_mobile_team.jpg" alt="Николай Тарасов">
+                </picture>
+                    <div class="information">
                     <h3 class="title">Николай Тарасов</h3>
                     <p class="content">Marketing</p>
                     <ul class="socials">
@@ -307,17 +310,19 @@
                 </div>
                </li>
                <li class="clause">
-                   <img 
-                   srcset="./images/Ермаков_mobile_team.jpg 1x,
-                   ./images/Ермаков_mobile_team2x.jpg 2x,
-                   ./images/Ермаков_tablet_team.jpg 1x,
-                   ./images/Ермаков_tablet_team2x.jpg 2x,
-                   ./images/Ермаков_desktop_team.jpg 1x,
-                   ./images/Ермаков_desktop_team2x.jpg 2x"
-                   src="images/Ермаков_mobile_team.jpg" 
-                   alt="Михаил Ермаков" 
-                   width="450px" height="460px">
-                   <div class="information">
+                <picture>
+                    <source srcset="./images/Ермаков_mobile_team.jpg 1x,
+                                    ./images/Ермаков_mobile_team2x.jpg 2x" 
+                                    media=" (max-width: 767px)" />
+                    <source srcset="./images/Ермаков_tablet_team.jpg 1x,
+                                    ./images/Ермаков_tablet_team2x.jpg 2x" 
+                                    media="(min-width: 768px)" />
+                    <source srcset="./images/Ермаков_desktop_team.jpg 1x,
+                                    ./images/Ермаков_desktop_team2x.jpg 2x" 
+                                    media="(min-width: 1200px)" />
+                    <img src="Ермаков_mobile_team.jpg" alt="Михаил Ермаков">
+                </picture>
+                                     <div class="information">
                     <h3 class="title">Михаил Ермаков</h3>
                     <p class="content">UI Designer</p>
                     <ul class="socials">

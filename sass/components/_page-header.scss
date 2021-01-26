@@ -18,9 +18,11 @@
   }
 }
 
-.tablet-desktop-position {
-  display: flex;
-  align-items: baseline;
+@media screen and(min-width: 768px) {
+  .tablet-desktop-position {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo__header-part {
